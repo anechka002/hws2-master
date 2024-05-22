@@ -1,8 +1,18 @@
 .burgerMenuIcon {
+  /* display: none; */
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 70px;
 }
 
 .header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
 }
