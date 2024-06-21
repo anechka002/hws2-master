@@ -1,22 +1,39 @@
 .radio {
+  appearance: none;
+  height: 15px;
+  width: 15px;
 
+  cursor: pointer;
+  border-radius: 50%;
+  outline: 2px solid black;
+}
+
+.radio:checked {
+  background-color: #131313;
+  border: 3px solid white;
 }
 
 .radio::before {
 }
 
-
 .radio:checked::before {
 }
 
 .label {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* margin-right: 20px; */
   gap: 13px;
   margin-bottom: 22px;
+  cursor: pointer;
+}
+.label:last-child {
+  margin-bottom: 0;
 }
 
 .options {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
 }
