@@ -1,22 +1,39 @@
 .item {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .item:last-of-type {
 }
 
 .users {
+  display: flex;
+  flex-direction: column;
 }
 
 .buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 .container {
+  margin: 25px 70px 30px;
+  max-width: 600px;
 }
 
 .thead {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgba(229, 229, 229, 1);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .nameCol {
+  padding: 17px;
 }
 
 .ageCol {
