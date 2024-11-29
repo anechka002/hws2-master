@@ -10,11 +10,33 @@
 .wrapper {
   display: flex;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
+  position: relative;
 }
 
 .number {
   font-family: 'Montserrat';
   font-size: 16px;
   font-weight: 600;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+
+.numberLeft {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+
+.numberRight {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 5px;
+  right: -45px;
 }
