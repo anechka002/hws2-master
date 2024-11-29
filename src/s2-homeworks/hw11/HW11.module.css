@@ -1,8 +1,19 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+  margin-left: 70px;
+  gap: 20px;
 }
 
 .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .number {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
 }
