@@ -35,6 +35,7 @@
     font-size: 14px;
     line-height: 20px;
     cursor: pointer;
+    margin-left: 70px;
 }
 
 .button:active {
@@ -52,4 +53,5 @@
     gap: 17px;
     flex-wrap: wrap;
     max-width: 450px;
+    margin-left: 70px;
 }
