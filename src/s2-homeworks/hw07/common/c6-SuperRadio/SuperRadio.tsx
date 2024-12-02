@@ -19,7 +19,7 @@ type DefaultSpanPropsType = DetailedHTMLProps<
 
 type SuperRadioPropsType = Omit<DefaultRadioPropsType, 'type'> & {
     options?: ArrType[]
-    onChangeOption?: (option: string) => void
+    onChangeOption?: (option: number) => void
     spanProps?: DefaultSpanPropsType // пропсы для спана
 }
 
@@ -36,7 +36,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
 }) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
         if(onChangeOption) {
-            onChangeOption(e.currentTarget.value)
+            onChangeOption(+e.currentTarget.value)
         }
         // делают студенты
     }

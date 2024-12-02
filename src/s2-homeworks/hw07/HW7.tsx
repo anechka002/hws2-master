@@ -11,20 +11,20 @@ import s from './HW7.module.css'
 * 4 - сделать стили в соответствии с дизайном
 * */
 export type ArrType = {
-    id: string,
+    id: number,
     value: string
 }
 
 const arr: ArrType[] = [
-    { id: '1', value: 'Pre-junior' },
-    { id: '2', value: 'Junior' },
-    { id: '3', value: 'Junior+' },
+    { id: 1, value: 'Pre-junior' },
+    { id: 2, value: 'Junior' },
+    { id: 3, value: 'Junior+' },
 ] // value может быть изменено
 
 const HW7 = () => {
-    const [value, setValue] = useState<string>('1') // селект и радио должны работать синхронно
+    const [value, setValue] = useState<number>(1) // селект и радио должны работать синхронно
 
-    const onChangeOption = (option: string) => {
+    const onChangeOption = (option: number) => {
         setValue(option)
     }
 
