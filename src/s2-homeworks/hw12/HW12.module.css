@@ -19,5 +19,10 @@ html {
 }
 
 .select {
-
+    padding: 10px 30px 10px 20px ;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin-left: 70px;
+    margin-bottom: 80px;
 }
