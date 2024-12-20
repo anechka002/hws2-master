@@ -1,7 +1,13 @@
 .buttonsContainer {
+  margin-bottom: 90px;
 }
 
 .responseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  margin-bottom: 150px;
 }
 
 .imageContainer {
@@ -14,9 +20,21 @@
 }
 
 .code {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 37px;
 }
 
 .text {
+  font-family: Montserrat sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
 }
 .info {
+  font-family: Montserrat sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
 }
