@@ -1,7 +1,13 @@
 .tech {
-
+  margin-left: 70px;
 }
 
 .loading {
+  display: flex;
+  justify-content: center;
+  margin-right: 500px;
+}
 
+.hw14 {
+  margin-bottom: 90px;
 }
