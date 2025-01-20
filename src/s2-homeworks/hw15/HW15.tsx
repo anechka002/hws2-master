@@ -47,6 +47,10 @@ const HW15 = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<TechType[]>([])
 
+    console.log('searchParams', searchParams)
+    console.log('totalCount', totalCount)
+    console.log('techs', techs)
+
     const sendQuery = (params: any) => {
         setLoading(true)
         getTechs(params)
@@ -56,29 +60,50 @@ const HW15 = () => {
                 // сохранить пришедшие данные
 
                 //
+                if(res && res.data) {
+                    setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
+                }
+                setSearchParams({
+                    page: params.page.toString(),
+                    count: params.count.toString(),
+                    sort: params.sort,
+                })
+            })
+            .catch((err) => {
+                console.error("Ошибка:", err);
+            })
+            .finally(() => {
+                setLoading(false)
             })
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
 
-        // setPage(
-        // setCount(
+        setPage(newPage)
+        setCount(newCount)
 
-        // sendQuery(
-        // setSearchParams(
-
-        //
+        sendQuery({page: newPage, count: newCount, sort})
+        setSearchParams({
+            page: newPage.toString(),
+            count: newCount.toString(),
+            sort,
+        })
     }
 
     const onChangeSort = (newSort: string) => {
         // делает студент
 
-        // setSort(
-        // setPage(1) // при сортировке сбрасывать на 1 страницу
+        setSort(newSort)
+        setPage(1) // при сортировке сбрасывать на 1 страницу
 
-        // sendQuery(
-        // setSearchParams(
+        sendQuery({page: 1, count, sort: newSort})
+        setSearchParams({
+            page: '1',
+            count: count.toString(),
+            sort: newSort
+        })
 
         //
     }

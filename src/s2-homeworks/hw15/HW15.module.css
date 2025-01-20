@@ -1,5 +1,8 @@
 .tech {
     width: 50vw;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .developer {
@@ -8,18 +11,25 @@
 
 .techHeader {
     width: 50vw;
+    margin-left: 70px;
+    background-color: rgba(229, 229, 229, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .developerHeader {
-
+    display: flex;
+    margin-right: 15px;
 }
 
 .row {
     display: flex;
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
 }
 
 .rowHeader {
     display: flex;
+    background-color: rgba(229, 229, 229, 1);
 }
 
 .loading {
